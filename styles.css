@@ -21,36 +21,17 @@ h1, h2, h3, h4 {
 
 h3 {
   margin-top: 2rem;
+  font-size: 1.3rem;
 }
 
-#skills-list,
 #job-description {
-  padding: 0;
+  padding: 0rem;
 }
 
-#skills-list li,
 #job-description li {
   display: block;
-  padding: 0.5rem;
+  margin-bottom: 1rem;
 }
-
-#skills-list {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  /* Justified content */
-  justify-content: center;
-  gap: 0.5rem;
-}
-
-  #skills-list li {
-    background-color: rgba(0, 0, 0, 0.6);
-    background: radial-gradient(circle, darkslategray 0%, rgba(0, 0, 0, 0.6) 100%);
-    border-radius: 1rem;
-    border: 2px solid rgba(211, 211, 211, 0.6);
-    /* 3 columns */
-    flex-basis: 30%;
-  }
 
 a:link, a:visited, a:hover, a:active {
   color: var(--font-color);
@@ -64,21 +45,11 @@ a:link, a:visited, a:hover, a:active {
   text-decoration: underline;
 }
 
-#section-links {
-  list-style: square;
-}
-
-#fullscreen-container {
-  width: 90vw; height: auto;
-  min-width: 280px;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: flex-start;
+.row {
+  justify-content: space-around;
 }
 
 .section {
-  width: 50%; min-height: 100px;
   padding: 1rem;
   border: 2px solid lightgray;
   background-color: rgba(0, 0, 0, 0.6);
@@ -89,11 +60,8 @@ a:link, a:visited, a:hover, a:active {
 
 /* Media query for smaller widths */
 @media screen and (max-width: 480px) {
-  body {
-    font-size: 0.5rem;
-  }
-
   .section {
     min-height: 20px;
+    min-width: 250px;
   }
 }
